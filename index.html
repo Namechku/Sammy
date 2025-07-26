@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Uchendu Samuel | Portfolio</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body, html { margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; background: #f4f4f4; }
+
+    /* === Welcome Page === */
+    #welcome {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #000;
+      color: #b3001b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      z-index: 9999;
+      animation: fadeOut 3s ease forwards;
+    }
+
+    @keyframes fadeOut {
+      0% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { opacity: 0; visibility: hidden; }
+    }
+
+    /* === Main Content === */
+    header {
+      background: #000; color: #fff;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      height: 60vh; text-align: center;
+    }
+    header h1 { font-size: 3em; margin: 0; }
+    header p { margin-top: 10px; font-size: 1.2em; color: #b3001b; }
+
+    nav {
+      background: #111; display: flex;
+      justify-content: center; padding: 10px; position: sticky; top: 0;
+    }
+    nav a {
+      color: #fff; margin: 0 15px; text-decoration: none;
+      font-weight: bold; transition: color 0.3s;
+    }
+    nav a:hover { color: #b3001b; }
+
+    section {
+      max-width: 880px; margin: 50px auto;
+      background: #fff; padding: 30px; border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      font-size: 2em; margin-bottom: 15px; color: #b3001b;
+    }
+    p, li { line-height: 1.6; }
+
+    .skills-list, .project-list, .contact-list {
+      list-style: none; padding-left: 0;
+    }
+    .skills-list li, .contact-list li, .project-list li {
+      margin-bottom: 10px; padding-left: 1em; position: relative;
+    }
+    .skills-list li::before,
+    .contact-list li::before,
+    .project-list li::before {
+      content: '•'; color: #b3001b; font-weight: bold; position: absolute; left: 0;
+    }
+
+    .btn {
+      display: inline-block; padding: 12px 24px; margin-top: 20px;
+      background: #b3001b; color: white; text-decoration: none;
+      border-radius: 4px; font-weight: bold; transition: background 0.3s;
+    }
+    .btn:hover { background: #8b0015; }
+
+    footer {
+      background: #000; color: #ccc; text-align: center;
+      padding: 30px; font-size: 0.9em;
+    }
+
+    @media(max-width:600px){
+      header h1{font-size:2.2em;}
+      section{margin:20px;padding:20px;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Welcome Page -->
+  <div id="welcome">Welcome to Samuel's Portfolio</div>
+
+  <!-- ✅ Main Content -->
+  <header>
+    <h1>Uchendu Samuel</h1>
+    <p>Focused Learner • Tech Explorer • Detail‑Oriented</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a focused and curious learner exploring how systems and digital tools work. I value clarity, precision, and persistence. I enjoy tasks that encourage logical thinking, structure, and consistency.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Data handling & spreadsheets (Google Sheets, Excel)</li>
+      <li>Logical problem solving</li>
+      <li>Document formatting & typing proficiency</li>
+      <li>Web literacy & online research</li>
+      <li>Presentation and collaboration skills</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="project-list">
+      <li><strong>Sample Task 1:</strong> Organised data in a spreadsheet to extract insights</li>
+      <li><strong>Sample Task 2:</strong> Created a formatted document following strict guidelines</li>
+      <li><strong>Sample Task 3:</strong> Collaborated with peers on structured assignments</li>
+    </ul>
+    <p>(Replace these with real projects or ideas when ready.)</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at:</p>
+    <ul class="contact-list">
+      <li><strong>Email:</strong> samueluchendu10@gmail.com</li>
+      <li><strong>Phone:</strong> 08106551285</li>
+      <li><strong>Location:</strong> Nigeria</li>
+    </ul>
+  </section>
+
+  <footer>
+    "Discipline and consistency make excellence possible — one step at a time."
+  </footer>
+
+</body>
+</html>
